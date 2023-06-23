@@ -100,7 +100,7 @@ export default function SignUp() {
   const SignInUser = async () => {
     try {
       const server = "https://i-backend.vercel.app";
-      const response = await fetch(`${server}/api/auth/createuser`, {
+      const response = await fetch(`${server}/auth/createuser`, {
         method: "POST", // Set the HTTP method here
         headers: {
           "Content-Type": "application/json", // Set the Content-Type header here

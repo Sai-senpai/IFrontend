@@ -21,7 +21,7 @@ const NoteState = (props)=>{
       
 
         const server = "https://i-backend.vercel.app"
-        const response = await fetch(`${server}/api/notes/fetchallnotes`,{
+        const response = await fetch(`${server}/notes/fetchallnotes`,{
           method: 'GET', // Set the HTTP method here
           headers: {
             'Content-Type': 'application/json', // Set the Content-Type header here
@@ -50,7 +50,7 @@ const NoteState = (props)=>{
      
             try {
               const server = "https://i-backend.vercel.app"
-        const response = await fetch(`${server}/api/notes/createnote`,{
+        const response = await fetch(`${server}/notes/createnote`,{
           method: 'POST', // Set the HTTP method here
           headers: {
             'Content-Type': 'application/json', // Set the Content-Type header here
@@ -82,7 +82,7 @@ const NoteState = (props)=>{
       
             try {
               const server = "https://i-backend.vercel.app"
-        const response = await fetch(`${server}/api/notes/deletenote/${id}`,{
+        const response = await fetch(`${server}/notes/deletenote/${id}`,{
           method: 'DELETE', // Set the HTTP method here
           headers: {
             'Content-Type': 'application/json', // Set the Content-Type header here
@@ -113,7 +113,7 @@ const NoteState = (props)=>{
             if(title==="" && description==="" && tag ==="") return "can't update"
             try {
               const server = "https://i-backend.vercel.app"
-              const response = await fetch(`${server}/api/notes/updatenote/${id}`,{
+              const response = await fetch(`${server}/notes/updatenote/${id}`,{
                 method: 'PATCH', // Set the HTTP method here
                 headers: {
                   'Content-Type': 'application/json', // Set the Content-Type header here
