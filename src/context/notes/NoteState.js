@@ -20,7 +20,7 @@ const NoteState = (props)=>{
       try {
       
 
-        const server = "https://i-backend.vercel.app"
+        const server = "https://i-backend.onrender.com"
         const response = await fetch(`${server}/notes/fetchallnotes`,{
           method: 'GET', // Set the HTTP method here
           headers: {
@@ -49,7 +49,7 @@ const NoteState = (props)=>{
     const addNote = async (title,description,tag) =>{
      
             try {
-              const server = "https://i-backend.vercel.app"
+              const server = "https://i-backend.onrender.com"
         const response = await fetch(`${server}/notes/createnote`,{
           method: 'POST', // Set the HTTP method here
           headers: {
@@ -81,7 +81,7 @@ const NoteState = (props)=>{
       
       
             try {
-              const server = "https://i-backend.vercel.app"
+              const server = "https://i-backend.onrender.com"
         const response = await fetch(`${server}/notes/deletenote/${id}`,{
           method: 'DELETE', // Set the HTTP method here
           headers: {
@@ -112,7 +112,7 @@ const NoteState = (props)=>{
 
             if(title==="" && description==="" && tag ==="") return "can't update"
             try {
-              const server = "https://i-backend.vercel.app"
+              const server = "https://i-backend.onrender.com"
               const response = await fetch(`${server}/notes/updatenote/${id}`,{
                 method: 'PATCH', // Set the HTTP method here
                 headers: {

@@ -50,7 +50,7 @@ useEffect(()=>{
 
   const LoginUser = async () => {
     try {
-      const server = "https://i-backend.vercel.app";
+      const server = "https://i-backend.onrender.com";
       const response = await fetch(`${server}/auth/login`, {
         method: "POST", // Set the HTTP method here
         headers: {

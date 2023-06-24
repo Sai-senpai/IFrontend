@@ -99,7 +99,7 @@ export default function SignUp() {
 
   const SignInUser = async () => {
     try {
-      const server = "https://i-backend.vercel.app";
+      const server = "https://i-backend.onrender.com";
       const response = await fetch(`${server}/auth/createuser`, {
         method: "POST", // Set the HTTP method here
         headers: {
